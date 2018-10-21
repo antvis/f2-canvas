@@ -54,9 +54,9 @@ Component({
       const query = wx.createSelectorQuery().in(this)
       query.select('.f2-canvas').boundingClientRect(res => {
         if (typeof callback === 'function') {
-          this.chart = callback(F2, canvas, res.width, res.height)
+          this.chart = callback(canvas, res.width, res.height, F2)
         } else if (this.data.opts && this.data.opts.onInit) {
-          this.chart = this.data.opts.onInit(F2, canvas, res.width, res.height)
+          this.chart = this.data.opts.onInit(canvas, res.width, res.height, F2)
         }
       }).exec()
     },
