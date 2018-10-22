@@ -1,7 +1,7 @@
 {
   "name": "@antv/f2-canvas",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "微信小程序 F2 图表组件",
   "main": "miniprogram_dist/index.js",
   "scripts": {
     "dev": "gulp dev --develop",
@@ -28,8 +28,8 @@
     ]
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "https://github.com/simaQ/f2-canvas.git"
   },
   "author": "sima.zhang1990@gmail.com",
   "license": "MIT",
