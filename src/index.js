@@ -22,6 +22,15 @@ Component({
   data: {
 
   },
+  
+  /**
+   * 数据变化时响应式更新图表
+   */
+  observers: {
+    'opts.onInit': function(v) {
+      this.init();
+    }
+  },
 
   ready() {
     if (!this.data.opts) {
